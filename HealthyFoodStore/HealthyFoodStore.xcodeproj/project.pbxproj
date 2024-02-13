@@ -12,6 +12,7 @@
 		AB424A882B7A839700327E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A872B7A839700327E00 /* ViewController.swift */; };
 		AB424A8D2B7A839A00327E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB424A8C2B7A839A00327E00 /* Assets.xcassets */; };
 		AB424A902B7A839A00327E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB424A8E2B7A839A00327E00 /* LaunchScreen.storyboard */; };
+		AB424A9A2B7BE83800327E00 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AB424A8C2B7A839A00327E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB424A8F2B7A839A00327E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB424A912B7A839A00327E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		AB424A822B7A839700327E00 /* HealthyFoodStore */ = {
 			isa = PBXGroup;
 			children = (
+				AB424A972B7BE7CF00327E00 /* Navigation */,
 				AB424A832B7A839700327E00 /* AppDelegate.swift */,
 				AB424A852B7A839700327E00 /* SceneDelegate.swift */,
 				AB424A872B7A839700327E00 /* ViewController.swift */,
@@ -62,6 +65,22 @@
 				AB424A912B7A839A00327E00 /* Info.plist */,
 			);
 			path = HealthyFoodStore;
+			sourceTree = "<group>";
+		};
+		AB424A972B7BE7CF00327E00 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AB424A982B7BE7FA00327E00 /* Coordinators */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AB424A982B7BE7FA00327E00 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			files = (
 				AB424A882B7A839700327E00 /* ViewController.swift in Sources */,
 				AB424A842B7A839700327E00 /* AppDelegate.swift in Sources */,
+				AB424A9A2B7BE83800327E00 /* CoordinatorProtocol.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
