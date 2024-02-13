@@ -13,6 +13,8 @@
 		AB424A8D2B7A839A00327E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB424A8C2B7A839A00327E00 /* Assets.xcassets */; };
 		AB424A902B7A839A00327E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB424A8E2B7A839A00327E00 /* LaunchScreen.storyboard */; };
 		AB424A9A2B7BE83800327E00 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */; };
+		AB424A9C2B7BF22500327E00 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A9B2B7BF22500327E00 /* AppCoordinator.swift */; };
+		AB424A9E2B7BF3CF00327E00 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A9D2B7BF3CF00327E00 /* OnboardingCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AB424A8F2B7A839A00327E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB424A912B7A839A00327E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		AB424A9B2B7BF22500327E00 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AB424A9D2B7BF3CF00327E00 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */,
+				AB424A9B2B7BF22500327E00 /* AppCoordinator.swift */,
+				AB424A9D2B7BF3CF00327E00 /* OnboardingCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -154,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB424A882B7A839700327E00 /* ViewController.swift in Sources */,
+				AB424A9E2B7BF3CF00327E00 /* OnboardingCoordinator.swift in Sources */,
 				AB424A842B7A839700327E00 /* AppDelegate.swift in Sources */,
+				AB424A9C2B7BF22500327E00 /* AppCoordinator.swift in Sources */,
 				AB424A9A2B7BE83800327E00 /* CoordinatorProtocol.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
 			);
