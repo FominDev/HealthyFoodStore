@@ -10,7 +10,8 @@ import UIKit
 class AppCoordinator: Coordinator {
     
     override func start() {
-        showOnboardingFlow()
+//        showOnboardingFlow()
+        showTabBarFlow()
     }
     
     override func finish() {
@@ -43,6 +44,40 @@ private extension AppCoordinator {
         onboardingCoordinator.start()
     }
     func showTabBarFlow() {
+        guard let navigationController = navigationController else { return }
         
+        let homeNavigationController = UINavigationController()
+        let homeCoordinator = HomeCoordinator(type: .home, navigationController: homeNavigationController)
+        homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
+        homeCoordinator.finishDelegate = self
+        homeCoordinator.start()
+        
+        let categoryNavigationController = UINavigationController()
+        let categoryCoordinator = CategoryCoordinator(type: .category, navigationController: categoryNavigationController)
+        categoryNavigationController.tabBarItem = UITabBarItem(title: "Category", image: UIImage(systemName: "list.bullet"), tag: 1)
+        categoryCoordinator.finishDelegate = self
+        categoryCoordinator.start()
+        
+        let cartNavigationController = UINavigationController()
+        let cartCoordinator = CartCoordinator(type: .cart, navigationController: cartNavigationController)
+        cartNavigationController.tabBarItem = UITabBarItem(title: "Cart", image: UIImage(systemName: "cart"), tag: 2)
+        cartCoordinator.finishDelegate = self
+        cartCoordinator.start()
+        
+        let profileNavigationController = UINavigationController()
+        let profileCoordinator = CartCoordinator(type: .profile, navigationController: profileNavigationController)
+        profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person"), tag: 3)
+        profileCoordinator.finishDelegate = self
+        profileCoordinator.start()
+        
+        addChildCoordinator(homeCoordinator)
+        addChildCoordinator(categoryCoordinator)
+        addChildCoordinator(cartCoordinator)
+        addChildCoordinator(profileCoordinator)
+        
+        let navigationControllers = [homeNavigationController, categoryNavigationController, cartNavigationController, profileNavigationController]
+        let tabBarController = TabBarController(tabBarControllers: navigationControllers)
+        
+        navigationController.pushViewController(tabBarController, animated: true)
     }
 }

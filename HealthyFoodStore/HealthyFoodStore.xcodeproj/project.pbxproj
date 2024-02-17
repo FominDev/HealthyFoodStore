@@ -15,6 +15,11 @@
 		AB424A9A2B7BE83800327E00 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */; };
 		AB424A9C2B7BF22500327E00 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A9B2B7BF22500327E00 /* AppCoordinator.swift */; };
 		AB424A9E2B7BF3CF00327E00 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A9D2B7BF3CF00327E00 /* OnboardingCoordinator.swift */; };
+		AB424AA02B80957B00327E00 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424A9F2B80957B00327E00 /* HomeCoordinator.swift */; };
+		AB424AA22B8095E800327E00 /* CategoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AA12B8095E800327E00 /* CategoryCoordinator.swift */; };
+		AB424AA42B80964900327E00 /* CartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AA32B80964900327E00 /* CartCoordinator.swift */; };
+		AB424AA62B80967900327E00 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AA52B80967900327E00 /* ProfileCoordinator.swift */; };
+		AB424AA92B80977800327E00 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AA82B80977800327E00 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		AB424A9B2B7BF22500327E00 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AB424A9D2B7BF3CF00327E00 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		AB424A9F2B80957B00327E00 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		AB424AA12B8095E800327E00 /* CategoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCoordinator.swift; sourceTree = "<group>"; };
+		AB424AA32B80964900327E00 /* CartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCoordinator.swift; sourceTree = "<group>"; };
+		AB424AA52B80967900327E00 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		AB424AA82B80977800327E00 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 		AB424A972B7BE7CF00327E00 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				AB424AA72B80972500327E00 /* Controllers */,
 				AB424A982B7BE7FA00327E00 /* Coordinators */,
 			);
 			path = Navigation;
@@ -85,8 +96,20 @@
 				AB424A992B7BE83800327E00 /* CoordinatorProtocol.swift */,
 				AB424A9B2B7BF22500327E00 /* AppCoordinator.swift */,
 				AB424A9D2B7BF3CF00327E00 /* OnboardingCoordinator.swift */,
+				AB424A9F2B80957B00327E00 /* HomeCoordinator.swift */,
+				AB424AA12B8095E800327E00 /* CategoryCoordinator.swift */,
+				AB424AA32B80964900327E00 /* CartCoordinator.swift */,
+				AB424AA52B80967900327E00 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AB424AA72B80972500327E00 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB424AA82B80977800327E00 /* TabBarController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +184,14 @@
 			files = (
 				AB424A882B7A839700327E00 /* ViewController.swift in Sources */,
 				AB424A9E2B7BF3CF00327E00 /* OnboardingCoordinator.swift in Sources */,
+				AB424AA92B80977800327E00 /* TabBarController.swift in Sources */,
 				AB424A842B7A839700327E00 /* AppDelegate.swift in Sources */,
 				AB424A9C2B7BF22500327E00 /* AppCoordinator.swift in Sources */,
 				AB424A9A2B7BE83800327E00 /* CoordinatorProtocol.swift in Sources */,
+				AB424AA02B80957B00327E00 /* HomeCoordinator.swift in Sources */,
+				AB424AA22B8095E800327E00 /* CategoryCoordinator.swift in Sources */,
+				AB424AA42B80964900327E00 /* CartCoordinator.swift in Sources */,
+				AB424AA62B80967900327E00 /* ProfileCoordinator.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
