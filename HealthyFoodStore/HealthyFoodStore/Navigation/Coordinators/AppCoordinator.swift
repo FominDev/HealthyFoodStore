@@ -9,9 +9,15 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
+    //MARK: - Properties
+    private let userSettings = UserSettings.shared
+    
     override func start() {
-        showOnboardingFlow()
-//        showTabBarFlow()
+        if userSettings.onboardingIsHidden {
+            showTabBarFlow()
+        } else {
+            showOnboardingFlow()
+        }
     }
     
     override func finish() {
@@ -24,6 +30,9 @@ extension AppCoordinator:  CoordinatorFinishDelegate {
         removeChildCoordinator(childCoordinator)
         
         switch childCoordinator.type {
+        case .onboarding:
+            navigationController?.viewControllers.removeAll()
+            showTabBarFlow()
         case .app:
             return
         default:

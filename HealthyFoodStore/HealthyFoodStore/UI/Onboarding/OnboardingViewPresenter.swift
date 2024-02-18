@@ -14,6 +14,7 @@ protocol OnboardingViewPresenterProtocol {
 class OnboardingViewPresenter: OnboardingViewPresenterProtocol {
     //MARK: - Properties
     weak var coordinator: OnboardingCoordinator!
+    private let userSettings = UserSettings.shared
     
     //MARK: - Initializers
     init(coordinator: OnboardingCoordinator!) {
@@ -21,6 +22,7 @@ class OnboardingViewPresenter: OnboardingViewPresenterProtocol {
     }
     
     func finishOnboarding() {
+        userSettings.onboardingIsHidden = true
         coordinator.finish()
     }
     

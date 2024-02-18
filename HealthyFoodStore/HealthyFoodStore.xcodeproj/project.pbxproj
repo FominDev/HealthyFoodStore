@@ -25,6 +25,7 @@
 		AB424AB32B810EDD00327E00 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */; };
 		AB424AB52B810F0D00327E00 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */; };
 		AB424AB72B82213C00327E00 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */; };
+		AB424ABA2B82892000327E00 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB92B82892000327E00 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		AB424AB92B82892000327E00 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		AB424A822B7A839700327E00 /* HealthyFoodStore */ = {
 			isa = PBXGroup;
 			children = (
+				AB424AB82B82890000327E00 /* Services */,
 				AB424AB02B810E5200327E00 /* UI */,
 				AB424AAA2B80B8C400327E00 /* Resources */,
 				AB424A972B7BE7CF00327E00 /* Navigation */,
@@ -157,6 +160,14 @@
 				AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AB424AB82B82890000327E00 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB424AB92B82892000327E00 /* UserSettings.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +256,7 @@
 				AB424AB32B810EDD00327E00 /* OnboardingViewController.swift in Sources */,
 				AB424AA62B80967900327E00 /* ProfileCoordinator.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
+				AB424ABA2B82892000327E00 /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

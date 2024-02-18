@@ -60,7 +60,7 @@ private extension OnboardingViewController {
             pageViewController.setViewControllers([pages[3]], direction: .forward, animated: true)
             finishButton.setTitle(pages[3].buttonText, for: .normal)
         case 3:
-            print("Go to tabBar")
+            viewPresenter.finishOnboarding()
         default:
             break
         }
@@ -101,7 +101,7 @@ private extension OnboardingViewController {
         finishButton.translatesAutoresizingMaskIntoConstraints = false
         finishButton.backgroundColor = AppColors.white
         finishButton.tintColor = AppColors.customGreen
-        finishButton.layer.cornerRadius  = 12
+        finishButton.layer.cornerRadius  = 24
         finishButton.titleLabel?.font = .boldSystemFont(ofSize: 18)
         finishButton.setTitleColor(AppColors.customGreen, for: .normal)
         finishButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
@@ -109,7 +109,7 @@ private extension OnboardingViewController {
             finishButton.bottomAnchor.constraint(equalTo: pageControl.topAnchor, constant: -80),
             finishButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             finishButton.widthAnchor.constraint(equalToConstant: 250),
-            finishButton.heightAnchor.constraint(equalToConstant: 44)
+            finishButton.heightAnchor.constraint(equalToConstant: 48)
         ])
     }
 }
