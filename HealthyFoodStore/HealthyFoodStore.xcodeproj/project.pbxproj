@@ -24,6 +24,7 @@
 		AB424AAF2B80BA9000327E00 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AAE2B80BA9000327E00 /* AppColors.swift */; };
 		AB424AB32B810EDD00327E00 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */; };
 		AB424AB52B810F0D00327E00 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */; };
+		AB424AB72B82213C00327E00 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AB424AAE2B80BA9000327E00 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
+		AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */,
 				AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */,
+				AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				AB424AA02B80957B00327E00 /* HomeCoordinator.swift in Sources */,
 				AB424AA22B8095E800327E00 /* CategoryCoordinator.swift in Sources */,
 				AB424AA42B80964900327E00 /* CartCoordinator.swift in Sources */,
+				AB424AB72B82213C00327E00 /* OnboardingPageViewController.swift in Sources */,
 				AB424AB32B810EDD00327E00 /* OnboardingViewController.swift in Sources */,
 				AB424AA62B80967900327E00 /* ProfileCoordinator.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
