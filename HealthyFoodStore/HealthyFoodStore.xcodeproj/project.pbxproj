@@ -22,6 +22,8 @@
 		AB424AA92B80977800327E00 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AA82B80977800327E00 /* TabBarController.swift */; };
 		AB424AAD2B80B91100327E00 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AAC2B80B91100327E00 /* UIColor+extension.swift */; };
 		AB424AAF2B80BA9000327E00 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AAE2B80BA9000327E00 /* AppColors.swift */; };
+		AB424AB32B810EDD00327E00 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */; };
+		AB424AB52B810F0D00327E00 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		AB424AA82B80977800327E00 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		AB424AAC2B80B91100327E00 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		AB424AAE2B80BA9000327E00 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		AB424A822B7A839700327E00 /* HealthyFoodStore */ = {
 			isa = PBXGroup;
 			children = (
+				AB424AB02B810E5200327E00 /* UI */,
 				AB424AAA2B80B8C400327E00 /* Resources */,
 				AB424A972B7BE7CF00327E00 /* Navigation */,
 				AB424A832B7A839700327E00 /* AppDelegate.swift */,
@@ -132,6 +137,23 @@
 				AB424AAC2B80B91100327E00 /* UIColor+extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB424AB02B810E5200327E00 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AB424AB12B810EB600327E00 /* Onboarding */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AB424AB12B810EB600327E00 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AB424AB22B810EDD00327E00 /* OnboardingViewController.swift */,
+				AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +228,7 @@
 			files = (
 				AB424A882B7A839700327E00 /* ViewController.swift in Sources */,
 				AB424A9E2B7BF3CF00327E00 /* OnboardingCoordinator.swift in Sources */,
+				AB424AB52B810F0D00327E00 /* OnboardingViewPresenter.swift in Sources */,
 				AB424AA92B80977800327E00 /* TabBarController.swift in Sources */,
 				AB424AAF2B80BA9000327E00 /* AppColors.swift in Sources */,
 				AB424AAD2B80B91100327E00 /* UIColor+extension.swift in Sources */,
@@ -215,6 +238,7 @@
 				AB424AA02B80957B00327E00 /* HomeCoordinator.swift in Sources */,
 				AB424AA22B8095E800327E00 /* CategoryCoordinator.swift in Sources */,
 				AB424AA42B80964900327E00 /* CartCoordinator.swift in Sources */,
+				AB424AB32B810EDD00327E00 /* OnboardingViewController.swift in Sources */,
 				AB424AA62B80967900327E00 /* ProfileCoordinator.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
 			);

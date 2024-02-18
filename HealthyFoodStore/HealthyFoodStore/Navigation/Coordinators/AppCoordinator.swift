@@ -10,8 +10,8 @@ import UIKit
 class AppCoordinator: Coordinator {
     
     override func start() {
-//        showOnboardingFlow()
-        showTabBarFlow()
+        showOnboardingFlow()
+//        showTabBarFlow()
     }
     
     override func finish() {
