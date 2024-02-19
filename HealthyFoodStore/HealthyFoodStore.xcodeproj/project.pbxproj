@@ -26,6 +26,7 @@
 		AB424AB52B810F0D00327E00 /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */; };
 		AB424AB72B82213C00327E00 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */; };
 		AB424ABA2B82892000327E00 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AB92B82892000327E00 /* UserSettings.swift */; };
+		AB424AC02B836DFF00327E00 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424ABF2B836DFE00327E00 /* SceneFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		AB424AB42B810F0D00327E00 /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 		AB424AB62B82213C00327E00 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		AB424AB92B82892000327E00 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		AB424ABF2B836DFE00327E00 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		AB424AB02B810E5200327E00 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AB424ABE2B836DE300327E00 /* SceneFactory */,
 				AB424AB12B810EB600327E00 /* Onboarding */,
 			);
 			path = UI;
@@ -168,6 +171,14 @@
 				AB424AB92B82892000327E00 /* UserSettings.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AB424ABE2B836DE300327E00 /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				AB424ABF2B836DFE00327E00 /* SceneFactory.swift */,
+			);
+			path = SceneFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 				AB424AA22B8095E800327E00 /* CategoryCoordinator.swift in Sources */,
 				AB424AA42B80964900327E00 /* CartCoordinator.swift in Sources */,
 				AB424AB72B82213C00327E00 /* OnboardingPageViewController.swift in Sources */,
+				AB424AC02B836DFF00327E00 /* SceneFactory.swift in Sources */,
 				AB424AB32B810EDD00327E00 /* OnboardingViewController.swift in Sources */,
 				AB424AA62B80967900327E00 /* ProfileCoordinator.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
