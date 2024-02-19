@@ -5,6 +5,7 @@
 //  Created by Артур Фомин on 19.02.2024.
 //
 
+
 import UIKit
 
 struct SceneFactory {
@@ -95,3 +96,4 @@ struct SceneFactory {
         return tabBarController
     }
 }
+
