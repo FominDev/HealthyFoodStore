@@ -30,6 +30,7 @@
 		AB424AE72B88A98B00327E00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AE62B88A98B00327E00 /* HomeViewController.swift */; };
 		AB424AE92B89F01400327E00 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AE82B89F01400327E00 /* HomeCollectionViewCell.swift */; };
 		AB424AEC2B8A403100327E00 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AEB2B8A403100327E00 /* Product.swift */; };
+		AB424AEF2B8B3C3A00327E00 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB424AEE2B8B3C3A00327E00 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		AB424AE62B88A98B00327E00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AB424AE82B89F01400327E00 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB424AEB2B8A403100327E00 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AB424AEE2B8B3C3A00327E00 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				AB424AE52B88A95400327E00 /* Home */,
+				AB424AED2B8B3BF300327E00 /* Category */,
 				AB424ABE2B836DE300327E00 /* SceneFactory */,
 				AB424AB12B810EB600327E00 /* Onboarding */,
 			);
@@ -204,6 +207,14 @@
 				AB424AEB2B8A403100327E00 /* Product.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AB424AED2B8B3BF300327E00 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AB424AEE2B8B3C3A00327E00 /* CategoryViewController.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				AB424AA62B80967900327E00 /* ProfileCoordinator.swift in Sources */,
 				AB424A862B7A839700327E00 /* SceneDelegate.swift in Sources */,
 				AB424ABA2B82892000327E00 /* UserSettings.swift in Sources */,
+				AB424AEF2B8B3C3A00327E00 /* CategoryViewController.swift in Sources */,
 				AB424AEC2B8A403100327E00 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

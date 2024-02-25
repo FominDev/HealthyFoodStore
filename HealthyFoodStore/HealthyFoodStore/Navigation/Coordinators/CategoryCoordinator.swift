@@ -10,12 +10,12 @@ import UIKit
 class CategoryCoordinator: Coordinator {
     
     override func start() {
-        let vc = ViewController()
-        vc.view.backgroundColor = .yellow
+        let vc = CategoryViewController()
+        vc.view.backgroundColor = AppColors.background
         navigationController?.pushViewController(vc, animated: true)
     }
     
     override func finish() {
-        print("Finish AppCoordinator")
+        print("Finish Coordinator")
     }
 }
