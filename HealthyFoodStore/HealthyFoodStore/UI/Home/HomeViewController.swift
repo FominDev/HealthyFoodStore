@@ -19,8 +19,6 @@ class HomeViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.popularsIdentifier)
-        collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
     private let recomendedLabel = UILabel()
@@ -28,8 +26,6 @@ class HomeViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.recomendedIdentifier)
-        collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
     private var popularProducts = [Product(name: "Phone", price: "100$", image: UIImage(systemName: "phone")),
@@ -85,6 +81,8 @@ class HomeViewController: UIViewController {
         popularsLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         
         popularsCollectionView.backgroundColor = AppColors.background
+        popularsCollectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.popularsIdentifier)
+        popularsCollectionView.showsHorizontalScrollIndicator = false
         popularsCollectionView.delegate = self
         popularsCollectionView.dataSource = self
         
@@ -93,6 +91,8 @@ class HomeViewController: UIViewController {
         recomendedLabel.font = UIFont.systemFont(ofSize: 30, weight: .bold)
         
         recomendedCollectionView.backgroundColor = AppColors.background
+        recomendedCollectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.recomendedIdentifier)
+        recomendedCollectionView.showsHorizontalScrollIndicator = false
         recomendedCollectionView.delegate = self
         recomendedCollectionView.dataSource = self
         
